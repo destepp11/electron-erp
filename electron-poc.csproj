@@ -5,11 +5,15 @@
   <ItemGroup>
     <PackageReference Include="ElectronNet.API" Version="0.0.9" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
     <DotNetCliToolReference Include="ElectronNET.CLI" Version="0.0.9" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="electron.manifest.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
   </ItemGroup>
 </Project>

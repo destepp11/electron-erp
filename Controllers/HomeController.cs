@@ -13,6 +13,42 @@ namespace electron_poc.Controllers
             return View();
         }
 
+        public IActionResult Workflow()
+        {
+            ViewData["Title"] = "Workflow";
+
+            return View();
+
+        }
+
+        public IActionResult Summary()
+        {
+            ViewData["Title"] = "Summary";
+
+            return View();
+        }
+
+        public IActionResult Inventory()
+        {
+            ViewData["Title"] = "Inventory";
+
+            return View();
+        }
+
+        public IActionResult PurchaseOrders()
+        {
+            ViewData["Title"] = "Purchase Orders";
+
+            return View();
+        }
+
+        public IActionResult ServiceCalls()
+        {
+            ViewData["Title"] = "Service Calls";
+
+            return View();
+        }
+
         public IActionResult About()
         {
             ViewData["Title"] = "About";
