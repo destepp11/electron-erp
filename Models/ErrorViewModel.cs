@@ -1,5 +1,3 @@
-using System;
-
 namespace electron_poc.Models
 {
     public class ErrorViewModel
