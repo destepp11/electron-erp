@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using electron_poc.Models;
 
@@ -10,8 +6,8 @@ namespace electron_poc.Controllers
 {
     public class HomeController : Controller
     {
-        private EmployeeModel _employeeModel = new EmployeeModel("Bill", "Developer");
-        private AddressModel _addressModel = new AddressModel("Two Microsoft Way", "Redmond","WA", "98052-6399", "425.555.0100");
+        private readonly EmployeeModel _employeeModel = new EmployeeModel("Bill", "Developer");
+        private readonly AddressModel _addressModel = new AddressModel("Two Microsoft Way", "Redmond","WA", "98052-6399", "425.555.0100");
         public IActionResult Index()
         {
             return View();
